@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../src/assets/balancas.png";
 import { ModalDetail } from "../components/ModalDetail";
 import { Container, Box, Typography, Grid, Button } from "@mui/material";
+import { formatId } from "../functions/FormatID";
 
 const ButtonLink = ({ text, onClick }) => (
   <Button
@@ -33,7 +34,17 @@ const ButtonLink = ({ text, onClick }) => (
 const serviceButtons = [
   {
     text: "Registro de Nascimento",
-    info: "Informações sobre o Registro de Nascimento...",
+    info: {
+      documentos: [
+        "Certidão de Casamento e documentos de ambos com fotografia;",
+        "Presença do pai OU da mãe, munido de documento de identidade próprio (RG, CNH ou Passaporte);",
+        "Declaração de Nascido Vivo (folha amarela fornecida pelo Hospital logo após o parto);",
+      ],
+      preco:
+        "O registro de nascimento é gratuito à todas as pessoas, assim como a 1ª via da certidão.",
+      observacao:
+        "Se os pais forem casados ou conviventes há menos de 180 dias da data do nascimento do filho, somente o pai poderá declarar o nascimento. Em caso de impossibilidade do comparecimento do pai ou da mãe no ato do registro, estes poderão ser representados por procuração pública específica.",
+    },
   },
   {
     text: "Registro de Óbito",
@@ -101,7 +112,7 @@ export default function ServicesSection() {
 
   return (
     <Box
-      id="Nossos Serviços"
+      id={formatId("Nossos Serviços")}
       sx={{
         backgroundColor: "#F4F6F8",
       }}

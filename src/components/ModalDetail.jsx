@@ -1,5 +1,5 @@
-import CloseIcon from "@mui/icons-material/Close";
 import { Box, Grid, IconButton, Modal, Typography } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 export function ModalDetail({ open, handleClose, content }) {
   return (
@@ -26,6 +26,7 @@ export function ModalDetail({ open, handleClose, content }) {
         >
           <CloseIcon />
         </IconButton>
+
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography
@@ -36,9 +37,40 @@ export function ModalDetail({ open, handleClose, content }) {
             >
               {content.text}
             </Typography>
-            <Typography color="#000" variant="body1">
-              {content.info}
-            </Typography>
+
+            {/* Verifica se a info é um objeto estruturado */}
+            {typeof content.info === "object" ? (
+              <>
+                <Typography variant="body1" sx={{ mb: 2 }}>
+                  {content.info.descricao}
+                </Typography>
+
+                <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
+                  Documentos Necessários:
+                </Typography>
+                <ul>
+                  {content.info.documentos.map((doc, index) => (
+                    <li key={index}>
+                      <Typography variant="body1">{doc}</Typography>
+                    </li>
+                  ))}
+                </ul>
+
+                <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
+                  Preço:
+                </Typography>
+                <Typography variant="body1">{content.info.preco}</Typography>
+
+                <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
+                  Observação:
+                </Typography>
+                <Typography variant="body1">
+                  {content.info.observacao}
+                </Typography>
+              </>
+            ) : (
+              <Typography variant="body1">{content.info}</Typography>
+            )}
           </Grid>
         </Grid>
       </Box>

@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import logo from "../../src/assets/logo.png";
+import { formatId } from "../functions/FormatID";
 
 const pages = ["Sobre o Cartório", "Nossos Serviços", "Dúvidas Frequentes"];
 
@@ -122,7 +123,7 @@ export default function NavBar() {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Button
                     key={page}
-                    href={`#${page.toLowerCase()}`}
+                    href={`#${formatId(page)}`}
                     onClick={handleCloseNavMenu}
                     sx={{
                       my: 2,
@@ -188,7 +189,7 @@ export default function NavBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                href={`#${page.toLowerCase()}`}
+                href={`#${formatId(page)}`}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
