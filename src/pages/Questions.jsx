@@ -13,11 +13,12 @@ import {
   cardsComiteExterno,
   swiperBreakpointsComite,
 } from "../components/Content";
+import { formatId } from "../functions/FormatID";
 
 export default function QuestionSection() {
   return (
     <Container
-      id="dúvidas"
+      id={formatId("Dúvidas Frequentes")}
       sx={{
         pt: "78px",
         borderTop: "1px solid #EAEDF1",

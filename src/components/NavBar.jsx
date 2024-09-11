@@ -196,6 +196,7 @@ export default function NavBar() {
                   color:
                     activeSection === page.toLowerCase() ? "#FFf" : "black",
                   display: "block",
+                  fontSize: "16px",
                   textTransform: "none",
                   fontWeight: "bold",
                   "&:hover": {

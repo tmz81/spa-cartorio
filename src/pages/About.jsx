@@ -1,28 +1,13 @@
-import { useState } from "react";
-import {
-  Container,
-  Box,
-  Typography,
-  Grid,
-  Modal,
-  IconButton,
-  Card,
-} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
-import banner from "../../src/assets/01.jpeg";
+import { Container, Box, Typography, Grid, Card } from "@mui/material";
 import { imgBio } from "../Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { formatId } from "../functions/FormatID";
 
 export default function AboutSection() {
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
   return (
     <Container
-      id="sobre"
+      id={formatId("Sobre o Cartório")}
       maxWidth="lg"
       sx={{ mt: "150px", pb: "150px", cursor: "default" }}
     >
@@ -120,7 +105,7 @@ export default function AboutSection() {
                       maxWidth: "100%",
                       width: "auto",
                       mx: "auto",
-                      borderRadius: 8,
+                      borderRadius: 4,
                     }}
                     src={img.src}
                     alt={img.alt}
@@ -131,51 +116,6 @@ export default function AboutSection() {
           </Swiper>
         </Grid>
       </Grid>
-
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-title"
-        aria-describedby="modal-description"
-      >
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            width: "98%",
-            bgcolor: "background.paper",
-            boxShadow: 24,
-            p: 4,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <IconButton
-            aria-label="close"
-            onClick={handleClose}
-            sx={{
-              position: "absolute",
-              right: 8,
-              top: 8,
-              color: (theme) => theme.palette.grey[500],
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-          <Box
-            component="img"
-            src={banner}
-            alt="Expanded Banner"
-            sx={{
-              maxHeight: "90vh",
-              maxWidth: "100%",
-            }}
-          />
-        </Box>
-      </Modal>
     </Container>
   );
 }
