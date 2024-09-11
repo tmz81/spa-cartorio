@@ -11,7 +11,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import logo from "../../src/assets/logo.png";
 
-const pages = ["Sobre", "Serviços", "Dúvidas Frequentes"];
+const pages = ["Sobre o Cartório", "Nossos Serviços", "Dúvidas Frequentes"];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -89,7 +89,7 @@ export default function NavBar() {
             </Typography>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 0.8, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="menu"
@@ -128,13 +128,13 @@ export default function NavBar() {
                       my: 2,
                       color:
                         activeSection === page.toLowerCase()
-                          ? "#FF7F0B"
+                          ? "#FFF"
                           : "black",
                       display: "flex",
                       textTransform: "none",
                       fontWeight: "bold",
                       "&:hover": {
-                        backgroundColor: "#FF7F0B",
+                        backgroundColor: "#1976d2",
                       },
                     }}
                   >
@@ -150,13 +150,11 @@ export default function NavBar() {
                   display: "flex",
                   width: "90%",
                   marginLeft: 1,
-                  backgroundColor: "#FFB74D",
                   color: "black",
-                  borderRadius: 50,
                   fontWeight: 700,
                   textTransform: "none",
                   "&:hover": {
-                    backgroundColor: "#FF7F0B",
+                    color: "#FFf",
                   },
                 }}
               >
@@ -195,7 +193,7 @@ export default function NavBar() {
                 sx={{
                   my: 2,
                   color:
-                    activeSection === page.toLowerCase() ? "#FF7F0B" : "black",
+                    activeSection === page.toLowerCase() ? "#FFf" : "black",
                   display: "block",
                   textTransform: "none",
                   fontWeight: "bold",

@@ -1,7 +1,7 @@
-import { Container, Box, Typography, Grid, Button } from "@mui/material";
-import logo from "../../src/assets/balancas.png";
 import React from "react";
-import { ModalEquipamentosDetalhe } from "../components/ModalEquipamentosDetalhe";
+import logo from "../../src/assets/balancas.png";
+import { ModalDetail } from "../components/ModalDetail";
+import { Container, Box, Typography, Grid, Button } from "@mui/material";
 
 const ButtonLink = ({ text, onClick }) => (
   <Button
@@ -101,7 +101,7 @@ export default function ServicesSection() {
 
   return (
     <Box
-      id="serviços"
+      id="Nossos Serviços"
       sx={{
         backgroundColor: "#F4F6F8",
       }}
@@ -169,7 +169,11 @@ export default function ServicesSection() {
                         fontWeight: 400,
                         fontSize: "14px",
                         display: "grid",
-                        gridTemplateColumns: "repeat(4, 1fr)",
+                        gridTemplateColumns: {
+                          xs: "repeat(1, 1fr)",
+                          sm: "repeat(2, 1fr)",
+                          md: "repeat(4, 1fr)",
+                        },
                         alignItems: "center",
                       }}
                     >
@@ -186,7 +190,7 @@ export default function ServicesSection() {
               </Grid>
             </Grid>
           </Box>
-          <ModalEquipamentosDetalhe
+          <ModalDetail
             open={open}
             handleClose={handleClose}
             content={currentInfo}

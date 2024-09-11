@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Box, Typography, Grid } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { cardsData, swiperBreakpoints } from "../components/Content";
-import { ModalEquipamentosDetalhe } from "../components/ModalEquipamentosDetalhe";
+import { ModalEquipamentosDetalhe } from "../components/ModalDetail";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";

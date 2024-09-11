@@ -1,7 +1,7 @@
 import CloseIcon from "@mui/icons-material/Close";
 import { Box, Grid, IconButton, Modal, Typography } from "@mui/material";
 
-export function ModalEquipamentosDetalhe({ open, handleClose, content }) {
+export function ModalDetail({ open, handleClose, content }) {
   return (
     <Modal open={open} onClose={handleClose} closeAfterTransition>
       <Box

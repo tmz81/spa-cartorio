@@ -17,7 +17,7 @@ import {
 export default function QuestionSection() {
   return (
     <Container
-      id="comitê"
+      id="dúvidas"
       sx={{
         pt: "78px",
         borderTop: "1px solid #EAEDF1",
