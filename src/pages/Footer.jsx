@@ -1,0 +1,108 @@
+import React from "react";
+import { Box, Container, Typography, Grid, Link } from "@mui/material";
+import {
+  LocationOn,
+  Email,
+  WhatsApp,
+  Phone,
+} from "@mui/icons-material";
+import MiniMapLocation from "../components/MiniMapLocation";
+import logo from "../../src/assets/logo.png";
+
+export default function FooterSection() {
+  return (
+    <Box id="footer" sx={{ bgcolor: "#1976d2", color: "#1E2125", py: 8 }}>
+      <Container maxWidth="lg">
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h6" gutterBottom>
+              <Box
+                component="a"
+                href="#"
+                sx={{
+                  display: "flex",
+                  mr: 2,
+                  pb: 1,
+                  fontFamily: "Montserrat",
+                  caretColor: "transparent",
+                  fontWeight: 700,
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                <Box
+                  component="img"
+                  src={logo}
+                  alt="logo"
+                  sx={{
+                    height: 70,
+                    userSelect: "default",
+                    cursor: "default",
+                    caretColor: "transparent",
+                  }}
+                />
+                <Typography variant="h6" gutterBottom fontWeight={600}>
+                  Cartório 13º Distrito
+                </Typography>
+              </Box>
+            </Typography>
+            <Typography variant="body1" gutterBottom color="#fff">
+              Horário de Atendimento:
+            </Typography>
+            <Typography variant="body1" gutterBottom color="#fff">
+              Segunda a sexta-feira de 08:00h às 16:00h
+            </Typography>
+            <Typography variant="body2" gutterBottom>
+              O Cartório de Casa Amarela foi fundado em Julho de 1942 e nomeado
+              como Dr. Marulo da Costa Lima, nomeação realizada pelo Dr.
+              Agamenon Magalhães. Iniciado o arquivo do Livro nº 1 do Cartório
+              de Casa Amarela.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h6" gutterBottom fontWeight={600}>
+              Contato: {""}
+            </Typography>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, pt: 4 }}>
+              <Email sx={{ mr: 1 }} />
+              <Typography color="#fff">cartorio13_casaamarela@hotmail.com</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+              <WhatsApp sx={{ mr: 1 }} />
+              <Typography color="#fff">(81) 9-9883-0065</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+              <Phone sx={{ mr: 1 }} />
+              <Typography color="#fff">(81) 4101-2030</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
+              <LocationOn sx={{ mr: 1 }} />
+              <Typography color="#fff">
+                R. Sen. Soares Meireles, 92 - Casa AmarelaRecife - PE,
+                52070-360.
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h6" gutterBottom fontWeight={600}>
+              Localização: {""}
+            </Typography>
+            <Box sx={{ pt: 3 }}>
+              <MiniMapLocation />
+            </Box>
+          </Grid>
+        </Grid>
+        <Box
+          sx={{
+            textAlign: "center",
+            mt: 4,
+            pt: 3,
+            borderTop: "1px solid black",
+          }}
+        >
+          <Typography color="#fff" variant="body2">© 2024. All rights reserved.</Typography>
+        </Box>
+      </Container>
+    </Box>
+  );
+}
