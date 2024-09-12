@@ -29,44 +29,33 @@ export default function AboutSection() {
             </span>
           </Typography>
           <Box>
+            <Typography variant="body1" gutterBottom mb={2}>
+              O Cartório de Casa Amarela, localizado no bairro de Casa Amarela,
+              no Recife-PE, é uma instituição com mais de 80 anos de tradição no
+              serviço de registros públicos. Fundado em julho de 1942, o
+              cartório foi estabelecido sob a gestão do Dr. Marulo da Costa
+              Lima, nomeado pelo então governador de Pernambuco, Dr. Agamenon
+              Magalhães.
+            </Typography>
+            <Typography variant="body1" gutterBottom mb={2}>
+              Desde sua criação, o Cartório de Casa Amarela tem desempenhado um
+              papel crucial no registro de atos e contratos civis, atendendo a
+              população da zona norte do Recife e contribuindo para a
+              organização e segurança jurídica dos cidadãos. O primeiro livro de
+              registros, iniciado logo após a sua fundação, marca o início de
+              uma longa trajetória de serviços prestados com excelência.
+            </Typography>
             <Typography variant="body1" gutterBottom>
-              O Cartório de Casa Amarela-PE foi fundado em Julho de 1942 e
-              nomeado como Dr. Marulo da Costa Lima, nomeação realizada pelo Dr.
-              Agamenon Magalhães. Iniciado o arquivo do Livro nº 1 do Cartório
-              de Casa Amarela. Todo arquivo anterior a julho de 1942 ficou sobre
-              responsabilidade do Cartório 12º Distrito Poço da Panela, no qual
-              foi nomeado Dr. Jacinto Ferreira Lima.
+              Os registros anteriores a julho de 1942 foram transferidos para o
+              Cartório do 12º Distrito, no Poço da Panela, sob a
+              responsabilidade do Dr. Jacinto Ferreira Lima, preservando a
+              integridade e continuidade dos dados históricos daquela região.
             </Typography>
-            <Typography
-              sx={{
-                fontWeight: 600,
-                fontSize: "28px",
-                userSelect: "none",
-                caretColor: "transparent",
-                mt: 4,
-                mb: 2,
-              }}
-            >
-              <span style={{ color: "#1976d2" }}>
-                Informações do cartório de Casa Amarela
-              </span>
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              Titular: MARIA DA CONCEIÇÃO DA COSTA LIMA
-            </Typography>
-            <br />
-
-            <Typography variant="body2" gutterBottom>
-              1º Oficial Substituto: SANDRA LAURENTINO MACIEL
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              2º Oficial Substituto: RODRIGO GONÇALVES DOS SANTOS
-            </Typography>
-            <br />
-            <Typography variant="body1">Escreventes autorizados:</Typography>
-            <Typography variant="body2">GABRIEL BREDA DE LUCENA</Typography>
-            <Typography variant="body2">
-              LEILYANE LARISSA SILVA DOS SANTOS DE SOUZA
+            <Typography variant="body1" gutterBottom>
+              Atualmente, o Cartório de Casa Amarela continua a modernizar seus
+              serviços, mantendo a confiança da comunidade e oferecendo um
+              atendimento ágil e eficiente. A instituição preza pela inovação,
+              sempre respeitando as tradições que marcaram sua história.
             </Typography>
           </Box>
         </Grid>
