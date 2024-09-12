@@ -1,11 +1,6 @@
 import React from "react";
 import { Box, Container, Typography, Grid, Link } from "@mui/material";
-import {
-  LocationOn,
-  Email,
-  WhatsApp,
-  Phone,
-} from "@mui/icons-material";
+import { LocationOn, Email, WhatsApp, Phone } from "@mui/icons-material";
 import MiniMapLocation from "../components/MiniMapLocation";
 import logo from "../../src/assets/logo.png";
 
@@ -52,11 +47,36 @@ export default function FooterSection() {
             <Typography variant="body1" gutterBottom color="#fff">
               Segunda a sexta-feira de 08:00h às 16:00h
             </Typography>
-            <Typography variant="body2" gutterBottom>
-              O Cartório de Casa Amarela foi fundado em Julho de 1942 e nomeado
-              como Dr. Marulo da Costa Lima, nomeação realizada pelo Dr.
-              Agamenon Magalhães. Iniciado o arquivo do Livro nº 1 do Cartório
-              de Casa Amarela.
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ userSelect: "none" }}
+            >
+              <strong>Titular</strong>: Maria da Conceição da Costa Lima
+            </Typography>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ userSelect: "none" }}
+            >
+              <strong>1º Oficial Substituto</strong>: Sandra Laurentino Maciel
+            </Typography>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ userSelect: "none" }}
+            >
+              <strong>2º Oficial Substituto</strong>: Rodrigo Gonçalves dos
+              Santos
+            </Typography>
+            <Typography variant="body1" sx={{ userSelect: "none" }}>
+              <strong>Escreventes autorizados</strong>:
+            </Typography>
+            <Typography variant="body2" sx={{ userSelect: "none" }}>
+              Gabriel Breda de Lucena
+            </Typography>
+            <Typography variant="body2" sx={{ userSelect: "none" }}>
+              Leilyane Larissa Silva dos Santos de Souza
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
@@ -65,7 +85,9 @@ export default function FooterSection() {
             </Typography>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, pt: 4 }}>
               <Email sx={{ mr: 1 }} />
-              <Typography color="#fff">cartorio13_casaamarela@hotmail.com</Typography>
+              <Typography color="#fff">
+                cartorio13_casaamarela@hotmail.com
+              </Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
               <WhatsApp sx={{ mr: 1 }} />
@@ -100,7 +122,9 @@ export default function FooterSection() {
             borderTop: "1px solid black",
           }}
         >
-          <Typography color="#fff" variant="body2">© 2024. All rights reserved.</Typography>
+          <Typography color="#fff" variant="body2">
+            © 2024. All rights reserved.
+          </Typography>
         </Box>
       </Container>
     </Box>
