@@ -2,6 +2,12 @@ import { Box, Grid, IconButton, Modal, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 export function ModalDetail({ open, handleClose, content }) {
+  const documentos =
+    content?.info?.documentos ||
+    content?.info?.documentosDois ||
+    content?.info?.documentoRegistro ||
+    content?.info?.documentoCinco;
+
   return (
     <Modal open={open} onClose={handleClose} closeAfterTransition>
       <Box
@@ -45,16 +51,36 @@ export function ModalDetail({ open, handleClose, content }) {
                   {content.info.descricao}
                 </Typography>
 
-                <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
-                  Documentos Necessários:
-                </Typography>
-                <ul>
-                  {content.info.documentos.map((doc, index) => (
-                    <li key={index}>
-                      <Typography variant="body1">{doc}</Typography>
-                    </li>
-                  ))}
-                </ul>
+                {/* Renderizando documentos se a lista de documentos existir */}
+                {documentos && (
+                  <>
+                    <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
+                      Documentos Necessários:
+                    </Typography>
+                    <ul>
+                      {documentos.map((doc, index) => (
+                        <li
+                          key={index}
+                          style={{
+                            listStyleType: "none", // Remove a bolinha
+                            marginBottom: "8px", // Espaçamento entre os itens
+                          }}
+                        >
+                          <Typography
+                            variant="body1"
+                            style={{
+                              fontFamily: "Arial, sans-serif", // Controle de fontes
+                              fontSize: "16px", // Tamanho da fonte
+                              color: "#333", // Cor da fonte
+                            }}
+                          >
+                            {doc}
+                          </Typography>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
 
                 <Typography variant="h6" sx={{ mt: 2, mb: 1 }}>
                   Preço:

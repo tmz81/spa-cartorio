@@ -36,19 +36,41 @@ const serviceButtons = [
     text: "Registro de Nascimento",
     info: {
       documentos: [
-        "Certidão de Casamento e documentos de ambos com fotografia;",
-        "Presença do pai OU da mãe, munido de documento de identidade próprio (RG, CNH ou Passaporte);",
-        "Declaração de Nascido Vivo (folha amarela fornecida pelo Hospital logo após o parto);",
+        "Pais Casados:",
+        "Certidão de casamento dos pais.",
+        "Documentos de identidade com foto dos pais (RG, CNH ou Passaporte).",
+        "Declaração de Nascido Vivo (DNV) – fornecida pelo hospital após o parto.",
+        "Pais Não Casados:",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte) do pai e da mãe.",
+        "Certidão de casamento (se algum dos pais for casado, separado, divorciado ou viúvo).",
+        "Declaração de Nascido Vivo (DNV) – fornecida pelo hospital.",
+        "Apenas com Filiação Materna:",
+        "Documento de identidade com foto (RG, CNH ou Passaporte) da mãe.",
+        "Certidão de casamento (se a mãe não for solteira).",
+        "Declaração de Nascido Vivo (DNV) – fornecida pelo hospital.",
+        "Pais Menores de 16 Anos:",
+        "O pai ou a mãe menor de idade deve comparecer com um dos responsáveis (pai, mãe ou curador).",
       ],
-      preco:
-        "O registro de nascimento é gratuito à todas as pessoas, assim como a 1ª via da certidão.",
+      preco: "O registro de Nascimento é gratuito à todas as pessoas.",
       observacao:
-        "Se os pais forem casados ou conviventes há menos de 180 dias da data do nascimento do filho, somente o pai poderá declarar o nascimento. Em caso de impossibilidade do comparecimento do pai ou da mãe no ato do registro, estes poderão ser representados por procuração pública específica.",
+        "Este procedimento garante a formalização do nascimento e a emissão dos documentos necessários para a criança, como a certidão de nascimento, que é essencial para exercer direitos e acessar serviços públicos.",
     },
   },
   {
     text: "Registro de Óbito",
-    info: "Informações sobre o Registro de Óbito...",
+    info: {
+      documentos: [
+        "Documentos do Falecido:",
+        "RG e CPF.",
+        "Certidão de nascimento (se solteiro)",
+        "certidão de casamento (se casado).",
+        "Documentos do Registrante:",
+        "RG e CPF.",
+      ],
+      preco: "O registro de Óbito é gratuito à todas as pessoas.",
+      observacao:
+        "O procedimento é essencial para que o sepultamento ou cremação possa acontecer de forma legal e para que os familiares possam dar andamento às questões legais relacionadas ao falecimento, como herança e encerramento de contas bancárias.",
+    },
   },
   {
     text: "Registro de Emancipação",
