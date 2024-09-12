@@ -4,7 +4,14 @@ import logo from "../assets/whatsapp.png";
 
 export default function ScrollButton() {
   const handleClick = () => {
-    window.location.href = "https://api.whatsapp.com/send?phone=5581998830065";
+    const url = import.meta.env.VITE_WHATSAPP_URL;
+    if (url) {
+      window.location.href = url;
+    } else {
+      console.error(
+        "A URL do WhatsApp não está definida na variável de ambiente."
+      );
+    }
   };
 
   return (
