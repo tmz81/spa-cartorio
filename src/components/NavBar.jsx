@@ -12,7 +12,12 @@ import { useEffect, useState } from "react";
 import logo from "../../src/assets/logo.png";
 import { formatId } from "../functions/FormatID";
 
-const pages = ["Sobre o Cartório", "Nossos Serviços", "Dúvidas Frequentes"];
+const pages = [
+  "Sobre o Cartório",
+  "Nossos Serviços",
+  "Dúvidas Frequentes",
+  "Contato",
+];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -66,12 +71,12 @@ export default function NavBar() {
             href="#"
             sx={{
               display: { xs: "none", md: "flex" },
-              mr: 2,
               fontFamily: "Montserrat",
               caretColor: "transparent",
               fontWeight: 700,
               color: "inherit",
               textDecoration: "none",
+              p: 1,
             }}
           >
             <Box
@@ -81,11 +86,11 @@ export default function NavBar() {
               sx={{
                 height: 74,
                 userSelect: "default",
-                cursor: "default",
+                cursor: "pointer",
                 caretColor: "transparent",
               }}
             />
-            <Typography variant="h6" gutterBottom fontWeight={600} pt={2}>
+            <Typography variant="h5" gutterBottom fontWeight={600} pt={2}>
               Cartório 13º Distrito
             </Typography>
           </Box>
@@ -128,9 +133,7 @@ export default function NavBar() {
                     sx={{
                       my: 2,
                       color:
-                        activeSection === page.toLowerCase()
-                          ? "#FFF"
-                          : "black",
+                        activeSection === page.toLowerCase() ? "#FFF" : "black",
                       display: "flex",
                       textTransform: "none",
                       fontWeight: "bold",
@@ -208,23 +211,6 @@ export default function NavBar() {
               </Button>
             ))}
           </Box>
-
-          <Button
-            href="#footer"
-            variant="contained"
-            sx={{
-              display: { xs: "none", md: "flex" },
-              backgroundColor: "ButtonFace",
-              color: "black",
-              fontWeight: 700,
-              textTransform: "none",
-              "&:hover": {
-                backgroundColor: "blue",
-              },
-            }}
-          >
-            Contato
-          </Button>
         </Toolbar>
       </Container>
     </AppBar>
