@@ -46,7 +46,7 @@ export default function FooterSection() {
                   }}
                 />
                 <Typography variant="h6" gutterBottom fontWeight={600}>
-                  Cartório 13º Distrito
+                  Cartório 13º Distrito Judiciário
                 </Typography>
               </Box>
             </Typography>

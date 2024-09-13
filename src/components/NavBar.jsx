@@ -146,24 +146,6 @@ export default function NavBar() {
                   </Button>
                 </MenuItem>
               ))}
-              <Button
-                href="#footer"
-                variant="contained"
-                onClick={handleCloseNavMenu}
-                sx={{
-                  display: "flex",
-                  width: "90%",
-                  marginLeft: 1,
-                  color: "black",
-                  fontWeight: 700,
-                  textTransform: "none",
-                  "&:hover": {
-                    color: "#FFf",
-                  },
-                }}
-              >
-                Contato
-              </Button>
             </Menu>
           </Box>
 
