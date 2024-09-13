@@ -204,7 +204,9 @@ export default function NavBar() {
                   fontWeight: "bold",
                   "&:hover": {
                     backgroundColor: "ButtonShadow",
+                    transform: "scale(1.1)",
                   },
+                  transition: "transform 0.3s ease-in-out",
                 }}
               >
                 {page}
