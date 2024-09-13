@@ -14,7 +14,7 @@ const ButtonLink = ({ text, onClick }) => (
       fontSize: 20,
       minHeight: "90px",
       textTransform: "none",
-      cursor: "default",
+      cursor: "pointer",
       m: 1,
       "&:hover": {
         backgroundColor: "#FF7F0B",
@@ -24,7 +24,6 @@ const ButtonLink = ({ text, onClick }) => (
         transform: "scale(1.05)",
         color: "#fff",
       },
-      cursor: "pointer",
     }}
   >
     {text}

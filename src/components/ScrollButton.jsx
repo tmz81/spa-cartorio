@@ -4,7 +4,7 @@ import logo from "../assets/whatsapp.png";
 
 export default function ScrollButton() {
   const handleClick = () => {
-    const url = import.meta.env.VITE_WHATSAPP_URL;
+    const url = "https://api.whatsapp.com/send?phone=5581998830065";
     if (url) {
       window.location.href = url;
     } else {
