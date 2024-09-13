@@ -31,7 +31,7 @@ export default function FooterSection() {
                   "&:hover": {
                     transform: "scale(1.05)",
                   },
-                  cursor: "pointer"
+                  cursor: "pointer",
                 }}
               >
                 <Box
@@ -160,7 +160,16 @@ export default function FooterSection() {
             <Typography variant="h6" gutterBottom fontWeight={600}>
               Localização: {""}
             </Typography>
-            <Box sx={{ pt: 3 }}>
+            <Box
+              sx={{
+                pt: 3,
+
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               <MiniMapLocation />
             </Box>
           </Grid>
