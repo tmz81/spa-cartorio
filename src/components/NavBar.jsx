@@ -63,7 +63,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <AppBar elevation={0} sx={{ color: "#000" }}>
+    <AppBar elevation={0} sx={{ backgroundColor: "#B6A57B", color: "#000" }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box
@@ -169,6 +169,7 @@ export default function NavBar() {
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
               justifyContent: "right",
+              gap: 1,
             }}
           >
             {pages.map((page) => (
@@ -185,7 +186,7 @@ export default function NavBar() {
                   textTransform: "none",
                   fontWeight: "bold",
                   "&:hover": {
-                    backgroundColor: "ButtonShadow",
+                    backgroundColor: "#e9d269",
                     transform: "scale(1.1)",
                   },
                   transition: "transform 0.3s ease-in-out",

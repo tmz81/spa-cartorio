@@ -8,11 +8,11 @@ const theme = createTheme({
       primary: "#000",
     },
     background: {
-      default: "#fff",
+      default: "#FDF8EC",
     },
   },
   typography: {
-    fontFamily: "Montserrat",
+    fontFamily: "Inter",
   },
   
 });

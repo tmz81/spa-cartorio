@@ -9,7 +9,7 @@ export default function FooterSection() {
   return (
     <Box
       id={formatId("Contato")}
-      sx={{ bgcolor: "#1976d2", color: "#1E2125", py: 8 }}
+      sx={{ bgcolor: "#B6A57B", color: "#1E2125", py: 8 }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={4}>

@@ -10,7 +10,7 @@ export default function AboutSection() {
     <Container
       id={formatId("Sobre o Cartório")}
       maxWidth="lg"
-      sx={{ mt: "150px", pb: "150px", cursor: "default" }}
+      sx={{ mt: "200px", pb: "150px", cursor: "default", backgroundColor: "#FDF8EC" }}
     >
       <Grid container spacing={2} alignItems="center" sx={{ color: "#000" }}>
         <Grid item xs={12} md={6}>
@@ -20,17 +20,26 @@ export default function AboutSection() {
             sx={{
               fontWeight: 600,
               fontSize: "38px",
+              fontFamily: "inter",
               userSelect: "none",
               caretColor: "transparent",
               mb: 2,
             }}
           >
-            <span style={{ color: "#1976d2" }}>
-              Sobre o Cartório 13º Distrito
+            <span>
+              Sobre o Cartório{" "}
+              <span style={{ color: "#FFCC00" }}>13º Distrito Judiciário</span>.
             </span>
           </Typography>
           <Box>
-            <Typography variant="body1" gutterBottom mb={2}>
+            <Typography
+              variant="body1"
+              gutterBottom
+              mb={2}
+              sx={{
+                fontFamily: "inter",
+              }}
+            >
               O Cartório de Casa Amarela, localizado no bairro de Casa Amarela,
               no Recife-PE, é uma instituição com mais de 80 anos de tradição no
               serviço de registros públicos. Fundado em julho de 1942, o
@@ -38,7 +47,14 @@ export default function AboutSection() {
               Lima, nomeado pelo então governador de Pernambuco, Dr. Agamenon
               Magalhães.
             </Typography>
-            <Typography variant="body1" gutterBottom mb={2}>
+            <Typography
+              variant="body1"
+              gutterBottom
+              mb={2}
+              sx={{
+                fontFamily: "inter",
+              }}
+            >
               Desde sua criação, o Cartório de Casa Amarela tem desempenhado um
               papel crucial no registro de atos e contratos civis, atendendo a
               população da zona norte do Recife e contribuindo para a
@@ -46,25 +62,33 @@ export default function AboutSection() {
               registros, iniciado logo após a sua fundação, marca o início de
               uma longa trajetória de serviços prestados com excelência.
             </Typography>
-            <Typography variant="body1" gutterBottom>
+            <Typography
+              variant="body1"
+              gutterBottom
+              sx={{
+                fontFamily: "inter",
+              }}
+            >
               Os registros anteriores a julho de 1942 foram transferidos para o
               Cartório do 12º Distrito, no Poço da Panela, sob a
               responsabilidade do Dr. Jacinto Ferreira Lima, preservando a
               integridade e continuidade dos dados históricos daquela região.
             </Typography>
-            <Typography variant="body1" gutterBottom>
+            {/* <Typography
+              variant="body1"
+              gutterBottom
+              sx={{
+                fontFamily: "inter",
+              }}
+            >
               Atualmente, o Cartório de Casa Amarela continua a modernizar seus
               serviços, mantendo a confiança da comunidade e oferecendo um
               atendimento ágil e eficiente. A instituição preza pela inovação,
               sempre respeitando as tradições que marcaram sua história.
-            </Typography>
+            </Typography> */}
           </Box>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-        >
+        <Grid item xs={12} md={6}>
           <Box
             component="img"
             sx={{
@@ -74,6 +98,7 @@ export default function AboutSection() {
               width: "auto",
               mx: "auto",
               borderRadius: 4,
+              pt: 12,
             }}
           />
           <Swiper

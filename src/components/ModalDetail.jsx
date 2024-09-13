@@ -18,7 +18,7 @@ export function ModalDetail({ open, handleClose, content }) {
           transform: "translate(-50%, -50%)",
           width: { xs: "90%", md: 1378 },
           maxHeight: { xs: "90%", md: "80%" },
-          bgcolor: "background.paper",
+          bgcolor: "#FDF8EC",
           border: "none",
           boxShadow: 24,
           p: 4,
@@ -27,7 +27,17 @@ export function ModalDetail({ open, handleClose, content }) {
         }}
       >
         <IconButton
-          sx={{ position: "absolute", top: 0, right: 16 }}
+          sx={{
+            position: "absolute",
+            top: 12,
+            right: 16,
+
+            transition: "transform 0.3s ease-in-out",
+            "&:hover": {
+              transform: "scale(1.5)",
+              backgroundColor: "#e9d269",
+            },
+          }}
           onClick={handleClose}
         >
           <CloseIcon />

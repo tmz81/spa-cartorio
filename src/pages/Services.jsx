@@ -10,6 +10,7 @@ const ButtonLink = ({ text, onClick }) => (
     onClick={onClick}
     sx={{
       color: "black",
+      backgroundColor: "#F6E5BA",
       fontWeight: 700,
       fontSize: 20,
       minHeight: "90px",
@@ -19,7 +20,7 @@ const ButtonLink = ({ text, onClick }) => (
       transition: "transform 0.3s ease-in-out",
       "&:hover": {
         transform: "scale(1.05)",
-        color: "#fff",
+        backgroundColor: "#e9d269",
       },
     }}
   >
@@ -241,7 +242,7 @@ export default function ServicesSection() {
     <Box
       id={formatId("Nossos Serviços")}
       sx={{
-        backgroundColor: "#F4F6F8",
+        backgroundColor: "#B6A57B",
       }}
     >
       <Container
@@ -250,7 +251,7 @@ export default function ServicesSection() {
       >
         <Grid
           sx={{
-            backgroundColor: "#F4F6F8",
+            // backgroundColor: "#F4F6F8",
             color: "#000",
             paddingBottom: 8,
             borderRadius: 5,
@@ -265,10 +266,10 @@ export default function ServicesSection() {
                 fontSize: 40,
                 caretColor: "transparent",
                 userSelect: "none",
-                color: "#1976d2",
+                // color: "#FFCC00"
               }}
             >
-              Nossos serviços
+              Conheça os nossos serviços
             </Typography>
             <Grid sx={{ marginTop: "40px" }}>
               <Grid

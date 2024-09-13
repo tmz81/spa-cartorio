@@ -24,20 +24,21 @@ export default function QuestionSection() {
         variant="h4"
         component="h1"
         sx={{
-          color: "#1976d2",
+          // color: "#1976d2",
           fontWeight: 700,
           fontSize: "40px",
           paddingBottom: "78px",
           textAlign: "center",
+          fontFamily: "inter",
         }}
       >
         Dúvidas Frequentes
       </Typography>
-      <Box sx={{ margin: "0 auto", backgroundColor: "#fff", mb: 8 }}>
+      <Box sx={{ margin: "0 auto", mb: 8 }}>
         <Accordion
           defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -49,7 +50,7 @@ export default function QuestionSection() {
             id="panel1a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               Horário de funcionamento
             </Typography>
@@ -63,7 +64,7 @@ export default function QuestionSection() {
           <Accordion
             defaultExpanded
             sx={{
-              backgroundColor: "#fff",
+              backgroundColor: "#FDF8EC",
               color: "#000",
               border: "none",
               boxShadow: "none",
@@ -75,7 +76,7 @@ export default function QuestionSection() {
               id="panel3a-header"
             >
               <Typography
-                sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+                sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
               >
                 O que é necessário para abrir uma firma em cartório?
               </Typography>
@@ -92,9 +93,8 @@ export default function QuestionSection() {
           </Accordion>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -106,7 +106,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               O que é necessário para o reconhecimento de firmas?
             </Typography>
@@ -121,9 +121,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -135,7 +134,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               Posso reconhecer uma firma aposta em qualquer documento?
             </Typography>
@@ -152,9 +151,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -166,7 +164,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               Devo comparecer ao cartório sempre que for reconhecer a minha
               assinatura, aposta em documento?
@@ -187,9 +185,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -201,7 +198,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               O que é autenticação?
             </Typography>
@@ -220,9 +217,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -234,7 +230,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               O que é necessário para registrar uma criança?
             </Typography>
@@ -256,9 +252,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -270,7 +265,7 @@ export default function QuestionSection() {
             id="panel2a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               Em qual cartório deve ser feito o registro de nascimento?
             </Typography>
@@ -286,9 +281,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -300,7 +294,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               É possível alterar o regime de bens antes da celebração?
             </Typography>
@@ -317,9 +311,8 @@ export default function QuestionSection() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          defaultExpanded
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#FDF8EC",
             color: "#000",
             border: "none",
             boxShadow: "none",
@@ -331,7 +324,7 @@ export default function QuestionSection() {
             id="panel3a-header"
           >
             <Typography
-              sx={{ color: "#1976d2", fontWeight: 700, fontSize: 28 }}
+              sx={{ color: "#e9d269", fontWeight: 700, fontSize: 28 }}
             >
               Quais os documentos necessários para trasladar o registro de
               nascimento para o Brasil?
