@@ -36,85 +36,211 @@ const serviceButtons = [
     text: "Registro de Nascimento",
     info: {
       documentos: [
-        "Pais Casados:",
-        "Certidão de casamento dos pais.",
+        "Documentos Necessários:",
+        "Certidão de nascimento do recém-nascido (emitida pela maternidade ou hospital).",
         "Documentos de identidade com foto dos pais (RG, CNH ou Passaporte).",
-        "Declaração de Nascido Vivo (DNV) – fornecida pelo hospital após o parto.",
-        "Pais Não Casados:",
-        "Documentos de identidade com foto (RG, CNH ou Passaporte) do pai e da mãe.",
-        "Certidão de casamento (se algum dos pais for casado, separado, divorciado ou viúvo).",
-        "Declaração de Nascido Vivo (DNV) – fornecida pelo hospital.",
-        "Apenas com Filiação Materna:",
-        "Documento de identidade com foto (RG, CNH ou Passaporte) da mãe.",
-        "Certidão de casamento (se a mãe não for solteira).",
-        "Declaração de Nascido Vivo (DNV) – fornecida pelo hospital.",
-        "Pais Menores de 16 Anos:",
-        "O pai ou a mãe menor de idade deve comparecer com um dos responsáveis (pai, mãe ou curador).",
+        "Comprovante de residência dos pais.",
+        "Certidão de casamento dos pais, se aplicável.",
       ],
-      preco: "O registro de Nascimento é gratuito à todas as pessoas.",
+      preco:
+        "O registro de nascimento geralmente não tem custo ou pode ter uma taxa simbólica, que varia conforme o estado e o cartório.",
       observacao:
-        "Este procedimento garante a formalização do nascimento e a emissão dos documentos necessários para a criança, como a certidão de nascimento, que é essencial para exercer direitos e acessar serviços públicos.",
+        "O registro de nascimento é um ato fundamental para garantir a cidadania e os direitos legais da criança. Deve ser realizado o quanto antes após o nascimento, de preferência dentro do prazo legal estabelecido para evitar complicações futuras.",
     },
   },
   {
     text: "Registro de Óbito",
     info: {
       documentos: [
-        "Documentos do Falecido:",
-        "RG e CPF.",
-        "Certidão de nascimento (se solteiro)",
-        "certidão de casamento (se casado).",
-        "Documentos do Registrante:",
-        "RG e CPF.",
+        "Documentos Necessários:",
+        "Certidão de óbito fornecida pelo hospital ou instituição de saúde.",
+        "Documentos de identidade com foto do falecido (se disponível).",
+        "Documentos de identidade com foto dos familiares responsáveis pelo registro.",
+        "Comprovante de residência do falecido.",
+        "Declaração de óbito, se necessário, fornecida pelo médico ou autoridade competente.",
       ],
-      preco: "O registro de Óbito é gratuito à todas as pessoas.",
+      preco:
+        "O registro de óbito geralmente não tem custo ou tem uma taxa simbólica, que pode variar de acordo com o estado e o cartório.",
       observacao:
-        "O procedimento é essencial para que o sepultamento ou cremação possa acontecer de forma legal e para que os familiares possam dar andamento às questões legais relacionadas ao falecimento, como herança e encerramento de contas bancárias.",
+        "O registro de óbito é essencial para a formalização do falecimento e para permitir a realização de procedimentos posteriores, como a liberação de bens e a realização de inventário. Deve ser feito o mais breve possível após o falecimento.",
     },
   },
   {
     text: "Registro de Emancipação",
-    info: "Informações sobre o Registro de Emancipação...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Certidão de nascimento do jovem que será emancipado.",
+        "Documentos de identidade com foto do jovem (RG, CNH ou Passaporte).",
+        "Comprovante de residência.",
+        "Documentos de identidade com foto dos pais ou responsáveis legais.",
+        "Declaração de emancipação assinada pelos pais ou responsáveis, se for o caso, ou decisão judicial que concede a emancipação.",
+      ],
+      preco:
+        "A taxa para o registro de emancipação pode variar conforme o estado e o cartório, geralmente entre R$ 50,00 e R$ 150,00.",
+      observacao:
+        "A emancipação é um processo legal que confere ao jovem maiores de 16 anos a capacidade para praticar atos da vida civil antes de atingir a maioridade. É importante que todos os documentos estejam completos e que o processo esteja em conformidade com as leis vigentes.",
+    },
   },
   {
     text: "Correção de Registro",
-    info: "Informações sobre a Correção de Registro...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Certidão de nascimento ou casamento original a ser corrigido.",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Comprovante de residência.",
+        "Justificativa ou declaração que explique a necessidade da correção.",
+      ],
+      preco:
+        "O valor para correção de registro varia conforme o tipo de erro e o estado. É necessário consultar o cartório local para obter informações específicas.",
+      observacao:
+        "A correção de registro é importante para garantir que os documentos reflitam corretamente as informações pessoais e legais. Pode ser necessário em casos de erro material ou de dados incorretos nos registros civis.",
+    },
   },
   {
     text: "Casamento Civil",
-    info: "Informações sobre o Casamento Civil...",
+    info: {
+      documentos: [
+        "Documentos dos Noivos:",
+        "Certidão de nascimento dos noivos.",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Comprovante de residência.",
+        "Se um dos noivos for divorciado, apresentar a certidão de casamento com averbação do divórcio.",
+        "Se um dos noivos for viúvo, apresentar a certidão de óbito do cônjuge falecido.",
+      ],
+      preco:
+        "O registro de Casamento Civil custa em média R$ 278,00. O prazo para conclusão é de até 30 dias úteis após a entrada do processo.",
+      observacao:
+        "O casamento civil formaliza a união entre duas pessoas e estabelece direitos e deveres legais. É importante levar todos os documentos necessários e estar ciente dos requisitos específicos do cartório.",
+    },
   },
   {
     text: "Certidão de 2ª Via",
-    info: "Informações sobre Certidão de 2ª Via...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Informações sobre o registro original (data e local do registro).",
+        "Comprovante de pagamento da taxa, se aplicável.",
+      ],
+      preco:
+        "A taxa para emissão de certidão de 2ª via varia conforme o tipo de certidão e o estado, geralmente em torno de R$ 50,00 a R$ 100,00.",
+      observacao:
+        "A certidão de 2ª via é necessária quando o documento original é perdido, extraviado ou danificado. É importante solicitar a 2ª via o quanto antes para evitar transtornos em situações que exigem o documento original.",
+    },
   },
   {
     text: "Abertura de Firma",
-    info: "Informações sobre Abertura de Firma...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Documento de identidade com foto (RG, CNH ou Passaporte).",
+        "CPF.",
+        "Comprovante de residência.",
+        "Declaração de atividades e endereço do estabelecimento, se aplicável.",
+      ],
+      preco:
+        "A abertura de firma tem um custo aproximado de R$ 60,00 a R$ 150,00, dependendo do cartório e do estado.",
+      observacao:
+        "A abertura de firma é necessária para autenticação de assinaturas em documentos e contratos. Esse procedimento é importante para garantir a validade e a legalidade de documentos assinados.",
+    },
   },
   {
     text: "Averbação",
-    info: "Informações sobre Averbação...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Certidão de nascimento ou casamento original para averbação.",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Comprovante de residência.",
+        "Documentos que comprovem a necessidade de averbação (ex.: declaração de mudança de estado civil, documentos de mudança de nome, etc.).",
+      ],
+      preco:
+        "O custo da averbação varia conforme o tipo e a complexidade do registro, geralmente entre R$ 50,00 e R$ 150,00.",
+      observacao:
+        "A averbação é o procedimento para registrar alterações ou adições em registros civis já existentes, como mudança de nome, estado civil ou inclusão de informações adicionais.",
+    },
   },
   {
     text: "Retificação",
-    info: "Informações sobre Retificação...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Certidão de nascimento, casamento ou óbito a ser retificado.",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Comprovante de residência.",
+        "Documentos que comprovem a necessidade de retificação (ex.: erros de grafia, dados incorretos).",
+      ],
+      preco:
+        "O valor da retificação de registro pode variar entre R$ 100,00 e R$ 200,00, dependendo do tipo e do estado.",
+      observacao:
+        "A retificação é utilizada para corrigir erros materiais ou de dados incorretos em registros civis, como nome, data de nascimento ou informações de parentesco.",
+    },
   },
   {
     text: "Divórcio",
-    info: "Informações detalhadas sobre Divórcio...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Certidão de casamento.",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte) dos cônjuges.",
+        "Comprovante de residência.",
+        "Se houver filhos menores, apresentação de documento que comprove a guarda ou acordo de custódia.",
+        "Certidão de nascimento dos filhos, se houver.",
+      ],
+      preco:
+        "O custo do processo de divórcio varia conforme o tipo (consensual ou litigioso) e o estado, geralmente entre R$ 1.000,00 e R$ 3.000,00.",
+      observacao:
+        "O divórcio é o procedimento legal para dissolver um casamento. Pode ser consensual, quando há acordo entre as partes, ou litigioso, quando há disputas. É essencial para regularizar a situação legal dos cônjuges e dos filhos, se houver.",
+    },
   },
   {
     text: "E-Notoriado",
-    info: "Informações sobre E-Notoriado...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "CPF.",
+        "Documentos do ato a ser notariado (contrato, declaração, etc.).",
+        "Comprovante de pagamento, se aplicável.",
+      ],
+      preco:
+        "O custo do e-notariado varia conforme o tipo de ato e o cartório, geralmente em torno de R$ 80,00 a R$ 200,00.",
+      observacao:
+        "O e-notariado é a digitalização e autenticação de documentos em meio eletrônico. Facilita o processo de reconhecimento e autenticação de documentos e atos notariais.",
+    },
   },
   {
     text: "Certidão de Inteiro Teor",
-    info: "Informações sobre Certidão de Inteiro Teor...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Informações sobre o registro original (data e local do registro).",
+        "Comprovante de pagamento da taxa, se aplicável.",
+      ],
+      preco:
+        "A taxa para emissão da certidão de inteiro teor varia conforme o tipo de certidão e o estado, geralmente em torno de R$ 50,00 a R$ 150,00.",
+      observacao:
+        "A certidão de inteiro teor é uma cópia completa do registro, incluindo todas as alterações e averbações. É utilizada para fins legais que exigem a íntegra do registro original.",
+    },
   },
   {
     text: "Inclusão de Nome Familiar",
-    info: "Informações sobre Inclusão de Nome Familiar...",
+    info: {
+      documentos: [
+        "Documentos Necessários:",
+        "Certidão de nascimento ou casamento onde será incluído o nome.",
+        "Documentos de identidade com foto (RG, CNH ou Passaporte).",
+        "Comprovante de residência.",
+        "Documentos que comprovem a necessidade de inclusão do nome (ex.: decisão judicial, alteração de nome por motivo de casamento ou divórcio).",
+      ],
+      preco:
+        "O custo para inclusão de nome familiar varia conforme o tipo de inclusão e o estado, geralmente entre R$ 50,00 e R$ 100,00.",
+      observacao:
+        "A inclusão de nome familiar refere-se à adição de nomes em registros civis, como inclusão de sobrenome após casamento ou mudança de nome após divórcio. É importante para a atualização de registros pessoais.",
+    },
   },
 ];
 
@@ -165,7 +291,7 @@ export default function ServicesSection() {
             >
               Nossos serviços
             </Typography>
-            <Grid sx={{ marginTop: "30px" }}>
+            <Grid sx={{ marginTop: "40px" }}>
               <Grid
                 item
                 xs={12}
@@ -179,6 +305,7 @@ export default function ServicesSection() {
                         paddingBottom: 2,
                         caretColor: "transparent",
                         userSelect: "none",
+                        pb: "40px",
                       }}
                     >
                       <Box
