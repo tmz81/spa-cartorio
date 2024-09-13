@@ -3,10 +3,14 @@ import { Box, Container, Typography, Grid, Link } from "@mui/material";
 import { LocationOn, Email, WhatsApp, Phone } from "@mui/icons-material";
 import MiniMapLocation from "../components/MiniMapLocation";
 import logo from "../../src/assets/logo.png";
+import { formatId } from "../functions/FormatID";
 
 export default function FooterSection() {
   return (
-    <Box id="footer" sx={{ bgcolor: "#1976d2", color: "#1E2125", py: 8 }}>
+    <Box
+      id={formatId("Contato")}
+      sx={{ bgcolor: "#1976d2", color: "#1E2125", py: 8 }}
+    >
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
@@ -23,6 +27,11 @@ export default function FooterSection() {
                   fontWeight: 700,
                   color: "inherit",
                   textDecoration: "none",
+                  transition: "transform 0.3s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                  cursor: "pointer"
                 }}
               >
                 <Box
@@ -32,7 +41,7 @@ export default function FooterSection() {
                   sx={{
                     height: 70,
                     userSelect: "default",
-                    cursor: "default",
+                    cursor: "pointer",
                     caretColor: "transparent",
                   }}
                 />
@@ -83,22 +92,64 @@ export default function FooterSection() {
             <Typography variant="h6" gutterBottom fontWeight={600}>
               Contato: {""}
             </Typography>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1, pt: 4 }}>
-              <Email sx={{ mr: 1 }} />
+            <Box
+              component="a"
+              href="mailto:cartorio13_casaamarela@hotmail.com"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mb: 1,
+                pt: 4,
+                textDecoration: "none",
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+              }}
+            >
+              <Email sx={{ mr: 1, color: "#000" }} />
               <Typography color="#fff">
                 cartorio13_casaamarela@hotmail.com
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
-              <WhatsApp sx={{ mr: 1 }} />
+            <Box
+              component="a"
+              href="https://api.whatsapp.com/send?phone=5581998830065"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mb: 1,
+                mt: 2,
+                textDecoration: "none",
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+              }}
+            >
+              <WhatsApp sx={{ mr: 1, color: "#000" }} />
               <Typography color="#fff">(81) 9-9883-0065</Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
               <Phone sx={{ mr: 1 }} />
               <Typography color="#fff">(81) 4101-2030</Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
-              <LocationOn sx={{ mr: 1 }} />
+            <Box
+              component="a"
+              href="https://maps.app.goo.gl/ZVCtjbxQSLmpE8xw9"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+                mb: 1,
+                mt: 2,
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+              }}
+            >
+              <LocationOn sx={{ mr: 1, color: "#000" }} />
               <Typography color="#fff">
                 R. Sen. Soares Meireles, 92 - Casa AmarelaRecife - PE,
                 52070-360.
