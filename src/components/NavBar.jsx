@@ -91,7 +91,7 @@ export default function NavBar() {
               }}
             />
             <Typography variant="h5" gutterBottom fontWeight={600} pt={2}>
-              Cartório 13º Distrito
+              Cartório 13º Distrito Judiciário
             </Typography>
           </Box>
 

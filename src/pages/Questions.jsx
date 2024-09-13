@@ -7,12 +7,6 @@ import {
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Comite from "../components/Comite";
-import {
-  cardsComite,
-  cardsComiteExterno,
-  swiperBreakpointsComite,
-} from "../components/Content";
 import { formatId } from "../functions/FormatID";
 
 export default function QuestionSection() {

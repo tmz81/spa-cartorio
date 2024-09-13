@@ -3,6 +3,7 @@ import { imgBio } from "../Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { formatId } from "../functions/FormatID";
+import "swiper/css";
 
 export default function AboutSection() {
   return (
@@ -63,8 +64,18 @@ export default function AboutSection() {
           item
           xs={12}
           md={6}
-          sx={{ display: "flex", justifyContent: "center" }}
         >
+          <Box
+            component="img"
+            sx={{
+              height: "200%",
+              display: "block",
+              maxWidth: "99%",
+              width: "auto",
+              mx: "auto",
+              borderRadius: 4,
+            }}
+          />
           <Swiper
             modules={[Autoplay]}
             spaceBetween={50}
