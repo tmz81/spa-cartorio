@@ -16,9 +16,6 @@ const ButtonLink = ({ text, onClick }) => (
       textTransform: "none",
       cursor: "pointer",
       m: 1,
-      "&:hover": {
-        backgroundColor: "#FF7F0B",
-      },
       transition: "transform 0.3s ease-in-out",
       "&:hover": {
         transform: "scale(1.05)",
